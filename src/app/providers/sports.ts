@@ -6,6 +6,7 @@ import { map, Observable, } from "rxjs";
 @Injectable({
     providedIn:'root'
 })
+
 export class Sports{
     url:string =environment.BASE_URL
     apiKey:string=environment.API_KEY

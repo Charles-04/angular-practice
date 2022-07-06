@@ -10,6 +10,8 @@ import { TodosServices } from './services/todos.service';
 import { ApiService } from './services/api.service';
 import { Sports } from './providers/sports';
 import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent, TodosComponent, TodoComponent, SportsUiComponent],
@@ -19,6 +21,8 @@ import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
     CommonModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [TodosServices, ApiService, Sports],
   bootstrap: [AppComponent],

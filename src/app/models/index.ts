@@ -2,4 +2,4 @@ import { from } from "rxjs";
 
 export * from './todo'
 export * from './api-response'
-export * from './sports'
+export * from './sport'

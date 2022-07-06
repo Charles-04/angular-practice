@@ -1,6 +1,6 @@
-import { Sports } from "./sports";
+import { Sport } from "./sport";
 export interface ApiResponse{
-football : Sports[];
-cricket:Sports[];
+football : Sport[];
+cricket:Sport[];
 golf:any;
 }
