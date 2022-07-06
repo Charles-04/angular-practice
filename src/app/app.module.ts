@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './pages/todos/todos.component';
 import { TodoComponent } from './pages/todo/todo.component';
+import { TodosServices } from './services/todos.service';
 
 @NgModule({
   declarations: [AppComponent, TodosComponent, TodoComponent],
@@ -16,7 +17,9 @@ import { TodoComponent } from './pages/todo/todo.component';
     ReactiveFormsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    TodosServices,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
