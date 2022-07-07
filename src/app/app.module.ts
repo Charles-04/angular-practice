@@ -12,9 +12,11 @@ import { Sports } from './providers/sports';
 import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { SportComponent } from './pages/sport/sport.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent, TodoComponent, SportsUiComponent],
+  declarations: [AppComponent, TodosComponent, TodoComponent, SportsUiComponent, SportComponent, LoginComponent],
   imports: [
     BrowserModule,
     FormsModule,

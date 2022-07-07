@@ -9,7 +9,7 @@ import { Sports } from '../../providers/sports';
 export class SportsUiComponent implements OnInit {
   loading: boolean = false;
   sportsRecord: Sport[] = [];
-
+  cricketRecord:Sport[] = [];
   constructor(private sportsService: Sports) {}
 
   ngOnInit(): void {
@@ -22,6 +22,7 @@ export class SportsUiComponent implements OnInit {
       next:(res:any)=>{
         this.loading = false
         this.sportsRecord = res.football
+        this.cricketRecord=res.cricket
         console.log("response",res)
       },
       error:(error:any)=>{

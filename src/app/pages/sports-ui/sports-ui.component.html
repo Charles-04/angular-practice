@@ -27,3 +27,38 @@
         </tr>
     </tbody>
 </table>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>S/N</th>
+            <th>Country</th>
+            <th>Region</th>
+            <th>Stadium</th>
+            <th>Start</th>
+            <th>Tournaments</th>
+            <th>Match</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of cricketRecord; let i = index"> 
+            <td>{{i +1}}</td>
+            <td>{{record?.country}}</td>
+            <td>{{record?.region}}</td>
+            <td>{{record?.stadium}}</td>
+            <td>{{record?.start}}</td>
+            <td>{{record?.tournament}}</td>
+            <td>{{record?.match}}</td>
+            <td>
+                <button>Update</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="wrapper">
+    <div *ngFor="let sport of sportsRecord" class="sport">
+    <app-sport [sport]="sport"></app-sport>
+</div>
+</div>
